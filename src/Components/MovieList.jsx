@@ -13,16 +13,15 @@ const MovieList = ({genreId,index_}) => {
 
     const getMovieByGenreId=()=>{
         GlobalApi.getMovieByGenreId(genreId).then(resp=>{
-            // console.log(resp.data.results)
             setMovieList(resp.data.results)
         })
     }
 
     const slideRight=(element)=>{
-        element.scrollLeft+=500;
+        element.scrollLeft+=800;
     }
     const slideLeft=(element)=>{
-        element.scrollLeft-=500;
+        element.scrollLeft-=800;
     }
   return (
     <div className='relative'>
